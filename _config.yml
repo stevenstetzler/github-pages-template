@@ -1,1 +1,7 @@
+# Set the theme. This tells GitHub Pages how to build your site
+# See: https://github.com/pages-themes/cayman
 theme: jekyll-theme-cayman
+
+# These variables are configurable in the Cayman theme
+title: <First Name> <Last Name>
+description: I am an astronomer at <Institution>
