@@ -1,0 +1,26 @@
+{% if site.author.social.size > 0 %}
+<ul class="icons">
+    {% for item in site.author.social %}
+        {% if item.type == 'github' %}
+            {% assign icon-class = 'fab fa-github' %}
+        {% elsif item.type == 'facebook' %}
+            {% assign icon-class = 'fab fa-facebook' %}
+        {% elsif item.type == 'instagram' %}
+            {% assign icon-class = 'fab fa-instagram' %}
+        {% elsif item.type == 'linkedin' %}
+            {% assign icon-class = 'fab fa-linkedin' %}
+        {% elsif item.type == 'twitter' %}
+            {% assign icon-class = 'fab fa-twitter' %}
+        {% elsif item.type == 'email' %}
+            {% assign icon-class = 'fas fa-envelope' %}
+        {% elsif item.type == 'researchgate' %}
+            {% assign icon-class = 'fab fa-researchgate' %}
+        {% else %}
+            {% assign icon-class = 'fas fa-external-link-alt' %}
+        {% endif %}   
+        <li>
+            <a href="{% if item.type == 'email' %}mailto:{% endif %}{{ item.link }}" class="{{ icon-class }} btn"></a>
+        </li>
+    {% endfor %}
+</ul>
+{% endif %}

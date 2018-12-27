@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="{{ site.locale }}">
+
+  {% include head.html %}
+
+  <body>
+    <section class="landing-page page-header">
+        <div style='margin: auto'>
+            <img src="{{ site.author.headshot }}" class="headshot"/>
+            <h1 class="project-name">{{ site.title }}</h1>
+            <h2 class="project-tagline">{{ site.tagline }}</h2>
+            <a href="{{ site.url }}{{ site.baseurl }}" class="btn">Home</a>
+            <a href="{{ '/about' | relative_url }}" class="btn">About Me</a>
+            <a href="{{ '/research' | relative_url }}" class="btn">Research</a>
+            <a href="{{ '/publications' | relative_url }}" class="btn">Publications</a>
+            {% include icons.html %}
+            <footer class="landing-page-footer">
+                <span>© {{ site.author.name }}. This page was generated using <strong><a href="#">GitHub Pages</a></strong> with an <strong><a href="https://github.com/astrosites/github-pages-theme">Astrosites theme</a></strong>.</span>
+            </footer>
+        </div>
+    </section>          
+  </body>
+</html>

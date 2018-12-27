@@ -1,7 +1,36 @@
-# Set the theme. This tells GitHub Pages how to build your site
-# See: https://github.com/pages-themes/cayman
-theme: jekyll-theme-cayman
+# Setup
+title:        Your Name
+tagline:      Astronomer at Institution
+baseurl:      "/github-pages-template/"
+paginate:     1
+locale:       "en"
 
-# These variables are configurable in the Cayman theme
-title: "<First Name> <Last Name>"
-description: "I am an astronomer at <Institution>"
+# About/contact
+author:
+  name: Your Name
+  headshot: img/headshot.png
+  social:
+    - type: email
+      link: your.email@mail.com
+    - type: github
+      link: https://github.com/GitHub_Name
+    - type: researchgate
+      link: https://researchgate.net/profile/Profile_Name
+    - type: twitter
+      link: https://twitter.com/Twitter_Handle
+    # Uncomment these to add more social icons to your site
+    # - type: facebook
+    #   link: https://facebook.com/StevenStetzler
+    # - type: instagram
+    #   link: https://instagram.com/stevenstetzler
+    # - type: linkedin
+    #   link: https://linkdin.com/stevenstetzler
+    # - type: orcid
+    #   link: https://orcid.org/id
+
+# Plugins
+plugins:
+  - jekyll-paginate
+
+#Others
+markdown: kramdown
