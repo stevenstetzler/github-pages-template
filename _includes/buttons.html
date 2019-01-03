@@ -1,0 +1,13 @@
+
+{% for title in site.nav %}
+    {% assign title_lower = title | downcase %}
+    {% if title_lower == 'home' %}
+    <a href="{{ '' | absolute_url }}" class="btn">{{ title }}</a>
+    {% endif %}
+    {% for page in site.pages %}
+        {% assign page_title_lower = page.title | downcase %}
+        {% if title_lower == page_title_lower %}
+        <a href="{{ page.url | absolute_url }}" class="btn">{{ page.title }}</a>
+        {% endif %}
+    {% endfor %}
+{% endfor %}
