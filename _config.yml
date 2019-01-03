@@ -7,11 +7,11 @@ locale:       "en"
 
 # About/contact
 author:
-  name: Your Name
+  name: Steven Stetzler
   headshot: img/headshot.png
   social:
     - type: email
-      link: your.email@mail.com
+      link: steven.stetzler@mail.com
     - type: github
       link: https://github.com/GitHub_Name
     - type: researchgate
