@@ -1,10 +1,11 @@
-# Setup
-title:        Your Name
-tagline:      Astronomer at Institution
-baseurl:      "/github-pages-template/"
-paginate:     1
-locale:       "en"
+# SITE INFORMATION
+title: Your Name
+tagline: Astronomer at Institution
+baseurl: ""
+paginate: 1
+locale: "en"
 
+# YOUR INFORMATION
 # About/contact
 author:
   name: Your Name
@@ -27,6 +28,21 @@ author:
     #   link: https://linkdin.com/stevenstetzler
     # - type: orcid
     #   link: https://orcid.org/id
+
+# This adds the _pages folder to Jekyll and tells it to process and output those files
+collections:
+  pages:
+    output: true
+    permalink: /:path/
+
+# NAVIGATION
+# This determines which navigation buttons are shown on the website
+# These MUST be the same as the title of the page (or the name of the file if that is not set)
+nav:
+  - home
+  - about
+  - research
+  - publications
 
 # Plugins
 plugins:
